@@ -1,0 +1,1372 @@
+:root {
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+  --yellow: #ffeb33;
+}
+
+* {
+  font-family: "Poor Story", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smmoth;
+  max-width: 1880px;
+  margin: auto;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  background-color: #423630;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+header .logo {
+  color: var(--yellow);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header .navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 52%;
+}
+
+header .navbar a {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding: 1.2rem;
+}
+
+header .navbar .active {
+  border-radius: 1.6rem;
+  border: solid var(--yellow);
+}
+
+header .navbar a:hover {
+  border-radius: 1.6rem;
+  border: solid var(--yellow);
+}
+
+header .icons i {
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-left: 1.2rem;
+  color: var(--yellow);
+  padding: 1.2rem;
+}
+
+header .icons i:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+header .icons #menu_bars {
+  display: none;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+}
+
+#search-form {
+  position: fixed;
+  z-index: 1004;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-form.active {
+  top: 0;
+}
+
+#search-form #search-box {
+  width: 30rem;
+  border-bottom: 0.3rem solid black;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  background: none;
+  font-size: 2rem;
+}
+
+#search-form #search-box::placeholder {
+  color: white;
+}
+
+#search-form #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+#search-form label {
+  cursor: pointer;
+  margin-left: 1.8rem;
+  font-size: 2rem;
+}
+
+#search-form label:hover {
+  color: var(--yellow);
+}
+
+#search-form #close {
+  cursor: pointer;
+  position: absolute;
+  top: 8rem;
+  right: 8rem;
+  font-size: 6rem;
+}
+
+#home {
+  padding: 0;
+}
+
+#home img {
+  width: 40rem;
+  height: 40rem;
+}
+
+#home .home-slider,
+#home .home-slider .wrapper {
+  width: 100%;
+}
+
+#home .home-slider .wrapper .slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+
+#home .home-slider .wrapper .slide .content {
+  flex: 1 1 45rem;
+}
+
+#home .home-slider .wrapper .slide .image {
+  flex: 1 1 45rem;
+}
+
+#home .home-slider .wrapper .slide .image img {
+  width: 100%;
+}
+
+#home .home-slider .wrapper .slide .content span {
+  font-size: 3.6rem;
+}
+
+#home .home-slider .wrapper .slide .content h3 {
+  font-size: 6.4rem;
+  color: var(--yellow);
+}
+
+#home .home-slider .wrapper .slide .content p {
+  font-size: 2.4rem;
+}
+
+.commerce .commercebox {
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  background-color: whitesmoke;
+}
+
+.commerce .commerce_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+}
+
+.commerce .commerce_container h3 {
+  font-size: 3.6rem;
+  background-color: rgb(185, 183, 183);
+  color: #423630;
+  border-radius: 1rem;
+  width: 60%;
+  margin: auto;
+}
+
+.commerce .commerce_container img {
+  margin-bottom: 1.4rem;
+}
+
+.commerce .commerce_container .box-1 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.commerce .commerce_container .box-1:hover {
+  background-color: var(--yellow);
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.commerce .commerce_container .box-2 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.commerce .commerce_container .box-2:hover {
+  background-color: dodgerblue;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.commerce .commerce_container .box-3 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.commerce .commerce_container .box-3:hover {
+  background-color: orangered;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.games {
+  margin-top: 10rem;
+}
+
+.games .pcgame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 70vh;
+}
+
+.games .pcgame .text {
+  position: relative;
+  padding: 4.8rem 0;
+  font-size: 8rem;
+}
+
+.games .pcgame .container {
+  width: 70rem;
+  height: 50rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.games .pcgame .container .image {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid #423630;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--yellow);
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.games .pcgame .container .image .icon img {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #423630;
+  transform: translate(-50%, -50%);
+}
+
+.games .pcgame .container .image:hover .main {
+  left: -20rem;
+  z-index: 12;
+  transform: translateX(10rem);
+  transition: left 0.5s, z-index 0s, transform 0.5s;
+  transition-delay: 0s, 0.5s, 0.5s;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.games .pcgame .container .main {
+  position: absolute;
+  width: 30rem;
+  height: 35rem;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  pointer-events: none;
+}
+
+.games .pcgame .container .main img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 25px;
+  border: 3px solid var(--yellow);
+  object-fit: cover;
+}
+
+.games .pcgame .container .content {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+  padding: 0 5rem;
+}
+
+.games .pcgame .container .image:hover .main .content .content-box {
+  transition: all 1.5s ease-in;
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
+.games .pcgame .container .image .main .content .content-box::before {
+  content: "";
+  position: absolute;
+  background-color: salmon;
+  width: 1.6rem;
+  height: 1.6rem;
+  right: 50%;
+  bottom: -0.8rem;
+  transform: translateX(50%) rotate(45deg);
+  z-index: -1;
+  margin-right: 1.1rem;
+}
+
+.games .pcgame .container .image .main .content .content-box {
+  background-color: salmon;
+  padding: 1rem 0;
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.games .pcgame .container .content .content-box .details {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.games .mobilegame {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.games .mobilegame .text {
+  font-size: 8rem;
+  padding: 4.8rem;
+}
+
+.games .mobilegame .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.games .mobilegame .container .navbar .navbar-kind .navbar-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.games .mobilegame .container .navbar .navbar-kind .navbar-btn .navbar-name {
+  list-style: none;
+  position: relative;
+  font-size: 2.4rem;
+  margin-right: 2.4rem;
+  border-radius: 20px;
+  color: #423630;
+  cursor: pointer;
+}
+
+.games
+  .mobilegame
+  .container
+  .navbar
+  .navbar-kind
+  .navbar-btn
+  .navbar-name::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.6rem;
+  left: 0;
+  bottom: -0.4rem;
+  background-color: var(--yellow);
+  border-radius: 20px;
+}
+
+.games
+  .mobilegame
+  .container
+  .navbar
+  .navbar-kind
+  .navbar-btn
+  .navbar-name:hover::before {
+  width: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.games .mobilegame .container .field {
+  background-color: whitesmoke;
+  width: 100%;
+  margin-top: 2.8rem;
+  padding: 3.8rem 20%;
+}
+
+.games .mobilegame .container .field .field-container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 10rem;
+  padding-bottom: 3.2rem;
+  padding-top: 3.2rem;
+}
+
+.games .mobilegame .container .field .field-container .field-box {
+  display: flex;
+  flex-direction: column;
+  height: 13rem;
+  padding: 1.2rem 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.games .mobilegame .container .field .field-container .field-box.invisible {
+  display: none;
+}
+
+.games .mobilegame .container .field .field-container .field-box .field-text {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+.games .mobilegame .container .field .field-container .field-box img {
+  border: 3px solid var(--yellow);
+  border-radius: 20px;
+}
+
+.kakaopage {
+  padding-top: 20rem;
+}
+
+.kakaopage .content {
+  background-color: #423630;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 1.6rem;
+}
+
+.kakaopage .card {
+  position: relative;
+  width: 30rem;
+  height: 40rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.kakaopage .card .front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+}
+
+.kakaopage .card .front .front-title {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--yellow);
+  border-bottom: 3px dashed #727171;
+}
+
+.kakaopage .card .front .front-title h3 {
+  font-size: 3.2rem;
+  padding: 1.6rem 0;
+}
+
+.kakaopage .card .front .front-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--yellow);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.kakaopage .card .front .front-text h3 {
+  position: absolute;
+  font-size: 3.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.kakaopage .card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.kakaopage .card .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.kakaopage .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.kakaopage .card:hover .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.kakaoent {
+  margin-top: 10rem;
+}
+
+.kakaoent .ent-title {
+  text-align: center;
+  font-size: 8rem;
+  padding: 4.8rem;
+}
+
+.kakaoent .ent-container .ent-box {
+  display: flex;
+  width: 100%;
+  padding: 2.4rem 3%;
+  background-color: whitesmoke;
+}
+
+.kakaoent .ent-container .reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 2.4rem 3%;
+  background-color: whitesmoke;
+}
+
+.kakaoent .ent-container .ent-box .entbox-title {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  padding: 8rem;
+  font-size: 2.4rem;
+  background-color: #423630;
+  color: white;
+}
+
+.kakaoent .ent-container .ent-box .entbox-title h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.2rem;
+  padding: 0 1.2rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence h5 {
+  padding: 0.6rem 0;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .btn {
+  padding: 1.2rem;
+  margin-top: 1.8rem;
+  margin-right: 2.8rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence a {
+  width: 12rem;
+  height: 2rem;
+  text-decoration: none;
+  color: red;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .keyword:hover .explaintion {
+  display: inline-block;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .explaintion {
+  position: absolute;
+  transform: translate(-9rem, -8rem);
+  border-radius: 20px;
+  padding: 0.6rem;
+  background-color: salmon;
+  color: black;
+  z-index: 5;
+  display: none;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .explaintion::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid salmon;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  top: 5.4rem;
+  left: 3.2rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .one {
+  position: absolute;
+  transform: translate(-9rem, -6rem);
+  border-radius: 20px;
+  padding: 0.6rem;
+  background-color: salmon;
+  color: black;
+  z-index: 5;
+  display: none;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .one::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid salmon;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  top: 3rem;
+  left: 3.8rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .two {
+  position: absolute;
+  transform: translate(-9rem, -13rem);
+  border-radius: 20px;
+  padding: 0.6rem;
+  background-color: salmon;
+  color: black;
+  z-index: 5;
+  display: none;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .two::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid salmon;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  top: 10rem;
+  left: 3.8rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .three {
+  position: absolute;
+  transform: translate(-5rem, -6rem);
+  border-radius: 20px;
+  padding: 0.6rem;
+  background-color: salmon;
+  color: black;
+  z-index: 5;
+  display: none;
+}
+
+.kakaoent
+  .ent-container
+  .ent-box
+  .entbox-sentence
+  .entbox-company
+  .three::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid salmon;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  top: 3rem;
+  left: 0.8rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .four {
+  position: absolute;
+  transform: translate(-10rem, -6rem);
+  border-radius: 20px;
+  padding: 0.6rem;
+  background-color: salmon;
+  color: black;
+  z-index: 5;
+  display: none;
+  width: 10rem;
+  text-align: center;
+}
+
+.kakaoent
+  .ent-container
+  .ent-box
+  .entbox-sentence
+  .entbox-company
+  .four::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid salmon;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  top: 3rem;
+  left: 1rem;
+}
+
+.kakaoent .ent-container .ent-box .entbox-sentence .explaintion span {
+  font-size: 1.4rem;
+}
+
+.kakaopay {
+  display: flex;
+  flex-direction: column;
+}
+
+.kakaopay .paytitle {
+  font-size: 8rem;
+  padding: 4.8rem;
+  text-align: center;
+}
+
+.kakaopay .pay-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.kakaopay .pay-container .firstfloor {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8rem;
+}
+
+.kakaopay .pay-container .firstfloor,
+.secondfloor,
+.thirdfloor {
+  padding: 3rem 0;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.kakaopay .pay-container .firstfloor .box {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.kakaopay .pay-container .firstfloor .living {
+  background-color: rgb(170, 210, 211);
+}
+
+.kakaopay .pay-container .firstfloor .box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -1rem;
+  height: 100%;
+  width: 1rem;
+  background-color: white;
+  transform-origin: right;
+  transform: skewY(45deg);
+  box-sizing: border-box;
+}
+
+.kakaopay .pay-container .firstfloor .box::after {
+  position: absolute;
+  content: "";
+  top: -1rem;
+  left: 0rem;
+  height: 1rem;
+  width: 100%;
+  background-color: white;
+  transform-origin: bottom;
+  transform: skewX(48deg);
+  box-sizing: border-box;
+}
+
+.kakaopay .pay-container .firstfloor .box:hover {
+  transform: translateY(-2rem);
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.8);
+}
+
+.kakaopay .pay-container .firstfloor .box h3 {
+  font-size: 2.4rem;
+}
+
+.kakaopay .pay-container .secondfloor {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-bottom: 8rem;
+}
+
+.kakaopay .pay-container .secondfloor .box {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.kakaopay .pay-container .secondfloor .Administrate {
+  background-color: rgb(170, 210, 211);
+}
+
+.kakaopay .pay-container .secondfloor .box h3 {
+  font-size: 2.4rem;
+}
+
+.kakaopay .pay-container .secondfloor .box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -1rem;
+  height: 100%;
+  width: 1rem;
+  background-color: white;
+  transform-origin: right;
+  transform: skewY(45deg);
+  box-sizing: border-box;
+}
+
+.kakaopay .pay-container .secondfloor .box::after {
+  position: absolute;
+  content: "";
+  top: -1rem;
+  left: 0rem;
+  height: 1rem;
+  width: 100%;
+  background-color: white;
+  transform-origin: bottom;
+  transform: skewX(48deg);
+  box-sizing: border-box;
+}
+
+.kakaopay .pay-container .secondfloor .box:hover {
+  transform: translateY(-2rem);
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.8);
+}
+
+.kakaopay .pay-container .thirdfloor {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.kakaopay .pay-container .thirdfloor .box {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.kakaopay .pay-container .thirdfloor .finance {
+  background-color: rgb(170, 210, 211);
+}
+
+.kakaopay .pay-container .thirdfloor .box h3 {
+  font-size: 2.4rem;
+}
+
+.kakaopay .pay-container .thirdfloor .box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -1rem;
+  height: 100%;
+  width: 1rem;
+  background-color: white;
+  transform-origin: right;
+  transform: skewY(45deg);
+  box-sizing: border-box;
+}
+
+.kakaopay .pay-container .thirdfloor .box::after {
+  position: absolute;
+  content: "";
+  top: -1rem;
+  left: 0rem;
+  height: 1rem;
+  width: 100%;
+  background-color: white;
+  transform-origin: bottom;
+  transform: skewX(48deg);
+  box-sizing: border-box;
+}
+
+.kakaopay .pay-container .thirdfloor .box:hover {
+  transform: translateY(-2rem);
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.8);
+}
+
+.kakaopay .pay-container .circularlineright {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-right: 0.5rem solid black;
+  border-left: 0 solid transparent;
+  border-radius: 20%;
+  right: 7rem;
+  top: 14rem;
+}
+
+.kakaopay .pay-container .circularlineleft {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-left: 0.5rem solid black;
+  border-radius: 20%;
+  left: 3rem;
+  bottom: 14rem;
+}
+
+.kakaomobility .mobilitytitle {
+  font-size: 8rem;
+  padding: 4.8rem;
+  text-align: center;
+}
+
+.kakaomobility .mobility-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.kakaomobility .mobility-container .onefloor,
+.twofloor,
+.threefloor {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7.4rem;
+  padding: 2.4rem;
+  border: 0.2rem solid black;
+  border-radius: 20px;
+}
+
+.kakaomobility .mobility-container .menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+}
+
+.kakaomobility .mobility-container .menu .name {
+  text-align: center;
+  font-size: 4.2rem;
+  background-color: #423630;
+  color: var(--yellow);
+}
+
+.kakaomobility .mobility-container .menu .explanation {
+  font-size: 3.2rem;
+}
+
+.kakaomobility .mobility-container .menu .explanation li {
+  padding-bottom: 1.2rem;
+  margin-top: 1.8rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+.kakaomobility .mobility-container .menu .explanation li span {
+  font-size: 2.4rem;
+  color: salmon;
+}
+
+.end {
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  box-shadow: var(--box-shadow);
+}
+
+.end .end-container {
+  background: rgb(221, 212, 212);
+  background: radial-gradient(
+    circle,
+    rgba(221, 212, 212, 1) 33%,
+    rgba(204, 200, 200, 1) 49%,
+    rgba(219, 213, 213, 1) 64%,
+    rgba(230, 229, 225, 1) 75%
+  );
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+  padding: 3.2rem 0;
+}
+
+.end .end-container .end-kakao {
+  color: #423630;
+}
+
+.end .end-container .end-kakao h1 {
+  font-size: 8rem;
+}
+
+.end .end-container .end-problem {
+  display: flex;
+  justify-content: center;
+}
+
+.end .end-container .end-problem .big {
+  margin: 0 4rem;
+  padding: 1.8rem;
+  border-radius: 20px;
+  background-color: rgb(170, 210, 211);
+}
+
+.end .end-container .end-problem .big h3 {
+  font-size: 2.4rem;
+}
+
+.end .end-container .end-problem .big span {
+  color: white;
+  font-weight: boler;
+}
+
+.end .end-container .end-except {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.6rem;
+  z-index: 2;
+}
+
+.end .end-container .end-except .small {
+  position: relative;
+  width: 16rem;
+  background-color: var(--yellow);
+  padding: 1.2rem;
+  margin: 0 1.2rem;
+  border-radius: 20px;
+}
+
+.end .end-container .end-except .small span {
+  font-size: 1.6rem;
+}
+
+.end .end-container .end-except .com {
+  position: absolute;
+  transform: translate(-37rem, -8rem);
+}
+
+.end .end-container .end-except .ga {
+  position: absolute;
+  transform: translate(-37rem, -16rem);
+}
+
+.end .end-container .end-except .ai {
+  position: absolute;
+  transform: translate(37rem, -8rem);
+}
+
+.end .end-container .end-except .ban {
+  position: absolute;
+  transform: translate(37rem, -16rem);
+}
+
+.end .end-container .end-except .small::before {
+  position: absolute;
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--yellow);
+  z-index: -1;
+}
+
+.end .end-container .end-except .com::before {
+  transform: translate(10rem, 0) rotate(45deg) skewY(-40deg);
+}
+
+.end .end-container .end-except .ga:before {
+  transform: translate(10.4rem, 0) rotate(10deg) skewX(30deg);
+}
+
+.end .end-container .end-except .enter::before {
+  transform: translate(9rem, -1rem) rotate(14deg) skewY(-30deg);
+}
+
+.end .end-container .end-except .mov::before {
+  transform: translate(4rem, -2rem) skewY(-30deg);
+}
+
+.end .end-container .end-except .page::before {
+  transform: translate(3rem, -2rem) skewY(-50deg);
+}
+
+.end .end-container .end-except .pay::before {
+  transform: translate(1rem, -2rem) skewY(30deg);
+}
+
+.end .end-container .end-except .inv::before {
+  transform: translate(-3rem, -1.8rem) skewY(20deg);
+}
+
+.end .end-container .end-except .ai::before {
+  transform: translate(-3.6rem, 0) rotate(-30deg) skewY(30deg);
+}
+
+.end .end-container .end-except .ban::before {
+  transform: translate(-6rem, 1rem) rotate(30deg) skewY(-30deg);
+}
+
+@media (max-width: 1560px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1540px) {
+  .games .mobilegame .container .field .field-container .field-box {
+    margin-bottom: 8rem;
+  }
+
+  .kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .two {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1410px) {
+  html {
+    font-size: 50%;
+  }
+
+  .games .mobilegame .container .field .field-container {
+    padding: 0;
+  }
+
+  .games .mobilegame .container .field .field-container .field-box {
+    margin-bottom: 6rem;
+    width: 20%;
+  }
+
+  .kakaoent .ent-container .ent-box .entbox-sentence .entbox-company .two {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 1345px) {
+  html {
+    font-size: 40%;
+  }
+
+  .games .mobilegame .container .field .field-container .field-box {
+    margin-bottom: 6rem;
+    width: 20%;
+  }
+  .kakaoent
+    .ent-container
+    .ent-box
+    .entbox-sentence
+    .entbox-company
+    a
+    .explaintion {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .games .mobilegame .container .field .field-container .field-box {
+    margin-bottom: 8rem;
+  }
+  .kakaoent
+    .ent-container
+    .ent-box
+    .entbox-sentence
+    .entbox-company
+    a
+    .explaintion {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1062px) {
+  html {
+    font-size: 40%;
+  }
+  .commerce .commercebox .commerce_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .commerce .commercebox .commerce_container .box-1,
+  .commerce .commercebox .commerce_container .box-2,
+  .commerce .commercebox .commerce_container .box-3 {
+    margin-bottom: 2.4rem;
+  }
+
+  .commerce .commercebox .commerce_container h3 {
+    width: 30rem;
+  }
+
+  .games .pcgame .text h3 {
+    padding-bottom: 4rem;
+  }
+
+  .games .pcgame .container .image .main .content {
+    padding: 0 0.5rem;
+  }
+
+  .games .mobilegame .container .field .field-container .field-box {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 914px) {
+  header .icons #menu_bars {
+    display: inline-block;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--yellow);
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  header .navbar.active {
+    display: block;
+    transition: all 0.5s ease-in-out;
+  }
+
+  header .navbar a {
+    color: #423630;
+    font-size: 3.2rem;
+    display: block;
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  header .navbar a:hover {
+    background-color: whitesmoke;
+  }
+
+  header .logo {
+    font-size: 5rem;
+  }
+
+  header .icons i {
+    font-size: 5rem;
+  }
+
+  .kakaopage .content .card .front .front-text h3 {
+    font-size: 3.2rem;
+  }
+
+  .kakaomobility .mobility-container .menu .name {
+    font-size: 3.6rem;
+  }
+
+  .kakaomobility .mobility-container .menu .explanation li {
+    font-size: 2.4rem;
+  }
+  #search-form #search-box {
+    width: 80%;
+    font-size: 3.6rem;
+  }
+
+  .games .pcgame {
+    height: 80rem;
+  }
+
+  .games .mobilegame .container .field .field-container .field-box {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 735px) {
+  .kakaoent .ent-container .ent-box .entbox-sentence h5 a .to {
+    width: 60rem;
+  }
+
+  .topbtn {
+    display: block;
+  }
+}
