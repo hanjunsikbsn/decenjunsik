@@ -1,0 +1,80 @@
+body {
+  background-color: bisque;
+  margin: auto;
+  text-align: center;
+  width: 40%;
+  height: 100vh;
+  border: 5px solid white;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.line {
+  margin: 8px;
+  border: 10px solid #f8eded;
+  border-radius: 20px;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  align-self: center;
+  font-size: 30px;
+}
+
+.buttonbox {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0 10px 5px 0;
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.menu {
+  background-color: #f8eded;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  height: 70vh;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+.menubox {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+  margin: 30px 30px 30px 0;
+}
+
+h3,
+h5 {
+  margin: 0;
+}
+
+.img {
+  align-self: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}

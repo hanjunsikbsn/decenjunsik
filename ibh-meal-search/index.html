@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>ibh-meal-search</title>
+  </head>
+  <body>
+    <section class="line">
+    <header>
+      <span class="title">무엇을 먹지?</span>
+    </header>
+    <section class="buttonbox">
+      <button class="btn">
+        <span data-key="shop" data-value="짬뽕타임">짬뽕타임</span>
+      </button>
+      <button class="btn">
+        <span data-key="shop" data-value="토담토담">토담토담</span>
+      </button>
+    </section>
+    </section>
+    <input type="text" onkeyup="if(window.event.keyCode==13)
+    {(searchkeyword(this.value))}" class="search" submit="submit" />
+    <section class="menu"></section>
+
+  </body>
+</html>
