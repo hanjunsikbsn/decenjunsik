@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  background-color: rgba(72, 85, 113, 0.9);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.imgbox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -95%);
+  opacity: 0.2;
+}
+
+.who {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -270%);
+  z-index: 10;
+  text-align: center;
+}
+
+.who h1 {
+  color: white;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 30rem;
+  height: 15rem;
+  margin: 0 2rem;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: -8px -8px 5px rgba(72, 85, 113, 0.9),
+    8px 8px 5px rgba(0, 0, 0, 0.6), inset 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.box span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.me {
+  background: rgb(237, 214, 214);
+  background: radial-gradient(
+    circle,
+    rgba(237, 214, 214, 1) 0%,
+    rgba(249, 122, 122, 1) 100%
+  );
+}
+
+.write {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  z-index: 10;
+  width: 60%;
+  display: none;
+}
+
+.write .t {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.write .t::before {
+  position: absolute;
+  content: "";
+  top: 40px;
+  width: 100%;
+  height: 0.1rem;
+  background-color: black;
+}
+
+.future .write h5 {
+  padding-top: 1rem;
+}
+
+.paint {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.paint .sector {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.paint .sector img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+}
+
+.paint .sector h5 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.makes .work {
+  top: -24px;
+  background-color: rgb(226, 214, 214);
+  padding: 0 0.6rem;
+  border-radius: 20px;
+  z-index: 11;
+}
+
+.skils {
+  background: rgb(245, 238, 205);
+  background: radial-gradient(
+    circle,
+    rgba(245, 238, 205, 1) 0%,
+    rgba(249, 188, 122, 1) 100%
+  );
+}
+
+.skils .t {
+  display: flex;
+  position: relative;
+}
+
+.skils .line {
+  transform: translate(0.4rem, 0.4rem);
+  width: 8rem;
+  height: 0.2rem;
+  background-color: white;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+
+.skils .line .fool {
+  background-color: rgba(72, 85, 113, 0.9);
+  height: 100%;
+}
+
+.skils .line .a {
+  width: 80%;
+}
+
+.skils .line .b {
+  width: 88%;
+}
+
+.skils .line .c {
+  width: 76%;
+}
+
+.makes {
+  background: rgb(241, 245, 205);
+  background: radial-gradient(
+    circle,
+    rgba(241, 245, 205, 1) 0%,
+    rgba(240, 249, 122, 1) 100%
+  );
+}
+
+.career {
+  background: rgb(205, 245, 212);
+  background: radial-gradient(
+    circle,
+    rgba(205, 245, 212, 1) 0%,
+    rgba(122, 249, 124, 1) 100%
+  );
+}
+
+.future {
+  background: rgb(208, 205, 245);
+  background: radial-gradient(
+    circle,
+    rgba(208, 205, 245, 1) 0%,
+    rgba(122, 124, 249, 1) 100%
+  );
+}
+
+.motive {
+  background: rgb(236, 205, 245);
+  background: radial-gradient(
+    circle,
+    rgba(236, 205, 245, 1) 0%,
+    rgba(216, 122, 249, 1) 100%
+  );
+}
+
+.content .box:hover span {
+  top: -24px;
+  background-color: rgb(226, 214, 214);
+  padding: 0 0.6rem;
+  border-radius: 20px;
+  z-index: 11;
+  transition: all 0.4s ease-in-out;
+}
+
+.content .box:hover .write {
+  display: block;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar .bar {
+  cursor: pointer;
+}
+
+.navbar .bar:hover {
+  background-color: white;
+}
+
+@media (max-width: 1631px) {
+  .content .box {
+    margin-bottom: 3.4rem;
+  }
+}
+
+/* 메뉴바 새로 만들기 - 1087px 구간임.*/
+@media (max-width: 1100px) {
+  .content .box {
+    display: none;
+  }
+  .content .cover span {
+    display: none;
+  }
+
+  .navbar .cover .box.appear {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar .cover .box .write {
+    display: block;
+    width: 60%;
+  }
+
+  .navbar .cover .box .write .t {
+    left: 20%;
+  }
+
+  .navbar .cover .box .write .t:before {
+    left: 0;
+    width: 60%;
+  }
+
+  .navbar {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 2.4rem;
+  }
+
+  .navbar .cover {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar .cover .bar {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(72, 85, 113, 1);
+    border: 1px solid white;
+  }
+
+  .navbar .bar h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 722px) {
+  .content .box .write {
+    width: 70%;
+  }
+}
+
+@media (max-width: 697px) {
+  .content .box .write h5 {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 552px) {
+  .content .box .paint {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .box .paint .sector {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 537px) {
+  .content .box .write {
+    width: 60%;
+  }
+}
+
+@media (max-width: 458px) {
+  .content .box .write {
+    width: 70%;
+  }
+}
+
+@media (max-width: 439px) {
+  .content .box .write h5 {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 402px) {
+  .content .box .write {
+    width: 90%;
+  }
+}
